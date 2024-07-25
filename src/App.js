@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import  { Routes }  from './Routes'
 
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
       <nav className='Nav-bar'>
         <img alt="" src={logo} width="7%"/>
         <ul className='Nav-items'>
-          <li> Main </li>
+          <li> <a href="./pages/Main.html"> Main</a></li>
           <li> About </li>
           <li> Contact </li>
         </ul>
@@ -27,6 +28,7 @@ function Body() {
 function App() {
   return (
     <div className="App">
+      <Routes />
       <Header />
       <Body />
     </div>
